@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
             };
 
             // Add the IP details to Firestore
-            addDoc(collection(db, 'headlessHorror'), ipDetails)
+            addDoc(collection(db, 'ipInfo'), ipDetails)
                 .then(docRef => {
                     console.log('IP details added to Firestore with ID:', docRef.id);
                 })
